@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "Inter-VariableFont_slnt";
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter-VariableFont_slnt";
+}
+
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
+nav {
+    background-color: white;
+}
+
+nav button {
+    border: 1px solid white !important;
+}
+
+nav .nav-item {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+nav .nav-item a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav .nav-item a:hover,
+.footer-new h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.navbar-collapse {
+    background-color: white !important;
+}
+
+main {
+    top: 80px !important;
+    position: relative;
+}
+
+.first-title {
+    font-size: 45px;
+    font-family: "Arial Black";
+}
+
+.first-body {
+    color: hsl(236, 13%, 42%);
+}
+
+.nav-link {
+    text-align: right;
+}
+
+.btn {
+    border-radius: 0px !important;
+    padding: 15px 35px !important;
+    margin-top: 15px !important;
+    font-family: "Inter-VariableFont_slnt" !important;
+}
+
+.btn-primary {
+    background-color: hsl(5, 85%, 63%) !important;
+    border: 1px solid transparent;
+    font-size: 20px !important;
+}
+
+.btn-primary:hover {
+    background-color: hsl(240, 100%, 5%) !important;
+}
+
+.div-news {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+}
+
+.second-title {
+    color: hsl(35, 77%, 62%);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.news {
+    margin-bottom: 35px;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.news:last-child {
+    margin-bottom: 0;
+    border-bottom: 0px solid hsl(236, 13%, 42%);
+}
+
+.news h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.news p {
+    margin-bottom: 35px;
+    color: hsl(236, 13%, 42%);
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.news:last-child p {
+    margin-bottom: 0px;
+}
+
+
+.footer-article img {
+    padding-right: 25px !important;
+    height: 125px;
+}
+
+.footer-article {
+    padding: 5px 0px !important;
+}
+
+.footer-new span {
+    font-size: 32px;
+    font-weight: bold;
+    color: hsl(233, 8%, 79%);
+}
+
+.footer-new h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.footer-new p {
+    color: hsl(236, 13%, 42%);
+    font-size: 14px;
+}
+
+@media (min-width: 991.98px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .first {
+        padding: 20px;
+        margin: 0 !important;
+    }
+
+    .first-title {
+        font-size: 42px;
+        font-family: "Arial Black";
+        margin-right: 85px;
+    }
+
+    .first-body {
+        color: hsl(236, 13%, 42%);
+        font-size: 18px;
+    }
+
+    .btn {
+        margin: 5px !important;
+    }
+
+    .second {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .second-title {
+        padding-top: 10px;
+        font-size: 32px;
+    }
+
+    .footer-article img {
+        padding-right: 25px !important;
+        height: 145px;
+    }
+
+    .news h3 {
+        font-size: 24px;
+    }
+
+    .news p {
+        font-size: 18px;
+    }
+}

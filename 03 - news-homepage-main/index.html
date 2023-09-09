@@ -1,60 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Alata">
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <header class="row">
+    <nav class="navbar navbar-expand-lg position-absolute fixed-top p-1" aria-label="Offcanvas navbar large container">
+      <div class="d-flex justify-content-between align-items-center w-100 p-1 pt-4 pb-4 container">
+        <a class="navbar-brand w-50" href="#"><img src="./assets/images/logo.svg" alt="logo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <img src="assets/images/icon-menu.svg" alt="menuOpen" class="img-fluid">
+        </button>
+        <div class="offcanvas offcanvas-end flex-grow-0 w-75" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <div></div>
+            <button type="button" data-bs-dismiss="offcanvas">
+              <img src="assets/images/icon-menu-close.svg" alt="menuOpen" class="img-fluid">
+            </button>
+          </div>
+          <div class="offcanvas-body d-flex justify-content-start align-items-start flex-row">
+            <ul class="navbar-nav justify-content-center align-items-start flex">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="d-lg-flex mb-lg-5 justify-content-start">
+      <section
+        class="first col-lg-8 row pt-3 d-flex flex-row d-lg-flex flex-lg-column justify-content-center justify-content-lg-around align-items-lg-center">
+        <img src="assets/images/image-web-3-mobile.jpg" alt="imageWeb" class="mobile">
+        <img src="assets/images/image-web-3-desktop.jpg" alt="imageWeb" class="desktop">
+        <article class="col-12 d-lg-flex mt-4 mt-lg-0 ">
+          <h2 class="first-title">The Bright Future of Web 3.0?</h2>
+          <div class="first-body d-lg-flex flex-column mt-3 mt-lg-0 mt-lg-0 ">
+            <p>We dive into the next evolution of the web that claims to put the power of the
+              platforms back into the hands of the people. But is it really fulfilling its
+              promise?</p>
+            <button class="btn btn-primary w-50">Read more</button>
+          </div>
+        </article>
+      </section>
+      <section class="second row mt-5 mb-5 ps-2 pe-2 mt-lg-">
+        <div class="div-news p-4 pt-0">
+          <h2 class="second-title pb-4 pt-4">New</h2>
+          <article class="news">
+            <h3>Hydrogen VS Electric Cars </h3>
+            <p> Will hydrogen-fueled cars ever catch up to EVs? </p>
+          </article>
+          <article class="news">
+            <h3>The Downsides of AI Artistry </h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </article>
+          <article class="news">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means. </p>
+          </article>
+        </div>
+      </section>
+    </div>
+    <div class="d-lg-flex justify-content-start mt-lg-5 pb-lg-5">
+      <section class="third d-lg-flex flex-row justify-content-lg-start">
+        <article class="footer-article d-flex flex-row justify-content-between">
+          <img src="assets/images/image-retro-pcs.jpg" alt="retro pcs" class="img-fluid col-4" />
+          <div class=" footer-new d-flex justify-content-center align-items-start flex-column">
+            <span class="order">01</span>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades? </p>
+          </div>
+        </article>
+        <article class="footer-article d-flex flex-row justify-content-start">
+          <img src="assets/images/image-top-laptops.jpg" alt="top laptops" class="img-fluid col-4" />
+          <div class="footer-new d-flex justify-content-start align-items-start flex-column">
+            <span class="order">02</span>
+            <h3>Top 10 Laptops of 2022 </h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+        <article class="footer-article d-flex flex-row justify-content-start">
+          <img src="assets/images/image-gaming-growth.jpg" alt="gaming growths" class="img-fluid col-4" />
+          <div class=" footer-new d-flex justify-content-center align-items-start flex-column">
+            <span class="order">03</span>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </section>
+    </div>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
   </div>
 </body>
+
 </html>
